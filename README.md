@@ -17,8 +17,20 @@ apt-get install libapache2-svn
 ### Using Our Script To Create A New Project Automatically
 
 ```bash
-curl -o "addNewProject.sh" https://github.com/jingxuan1990/svn/blob/master/add_new_project_on_ubuntu.sh
+curl -o addNewProject.sh https://github.com/jingxuan1990/svn/blob/master/add_new_project_on_ubuntu.sh
+
+or
+
+wget -O addNewProject3.sh https://github.com/jingxuan1990/svn/blob/master/add_new_project_on_ubuntu.sh
+
+
 chmod +x addNewProject.sh
-./addNewProject.sh new_project_name or ./addNewProject.sh new_project_name username password
+
+
+./addNewProject.sh new_project_name
+
+or
+
+./addNewProject.sh new_project_name username password
 ```
 If you don't set the username and password, the script will generate a pair of username and password for you.
